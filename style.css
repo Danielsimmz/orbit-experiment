@@ -1,0 +1,76 @@
+body {
+    background-color: green;
+}
+
+#track-container {
+    position: relative;
+    top: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#track-outer-border {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: 2px #ffffff solid;
+    border-radius: 100%;
+    background-color: grey;
+}
+
+#track-middle-lane {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 500px;
+    width: 500px;
+    border: 2px #ffffff dashed;
+    border-radius: 100%;
+    background-color: grey;
+}
+
+#track-inner-border {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 400px;
+    width: 400px;
+    border: 2px #ffffff solid;
+    border-radius: 100%;
+    background-color: green;
+}
+
+#racecar1 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 300%;
+    text-align: center;
+    width: 530px;
+    height: 530px;
+    -webkit-animation: spin-left 10s linear infinite;
+    animation: spin-left 4s linear infinite;
+}
+
+#racecar2 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    font-size: 300%;
+    text-align: center;
+    width: 610px;
+    height: 610px;
+    -webkit-animation: spin-left 11s linear infinite;
+    animation: spin-left 11s linear infinite;
+}
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-left {
+100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
